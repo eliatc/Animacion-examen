@@ -1,0 +1,52 @@
+/* Estilos generales */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8c7676;
+    overflow: hidden;
+}
+
+/* Estilos para el título */
+h1 {
+    position: absolute;
+    top: 20px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+/* Cuadrado animado */
+.cuadrado {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    animation: movimiento 4s infinite alternate ease-in-out;
+}
+
+/* Animación con desplazamiento, cambio de color, tamaño y zigzag */
+@keyframes movimiento {
+    0% {
+        transform: translate(-200px, 0) scale(1);
+        background-color: #E8C1C1;
+    }
+    25% {
+        transform: translate(-100px, -50px) scale(1.2);
+        background-color: #D1B3C4;
+    }
+    50% {
+        transform: translate(0, 50px) scale(1.5);
+        background-color:  #B0C7C2;
+    }
+    75% {
+        transform: translate(100px, -50px) scale(1.2);
+        background-color: #F0D9B5 ;
+    }
+    100% {
+        transform: translate(200px, 0) scale(1);
+        background-color: #A3C4E7;
+    }
+}
